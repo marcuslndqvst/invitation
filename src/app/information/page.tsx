@@ -6,7 +6,7 @@ import ".././globals.css";
 
 export default function Home() {
   return (
-    <div className="bg-black flex flex-col">
+    <div className="bg-black flex items-center flex-col">
       <Link href="/">
         <div className="w-full flex justify-end p-5">X</div>
       </Link>
