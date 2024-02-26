@@ -3,29 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 236, 242, 121;
+  --background-start-rgb: 8, 11, 23;
+  --background-end-rgb: 56, 21, 173;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 236, 242, 121;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
+  font-family: monospace;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  background: linear-gradient(to bottom, transparent, black)
     rgb(var(--background-start-rgb));
+  letter-spacing: 6px;
 }
 
+.heading {
+  color: rgb(var(--foreground-rgb));
+}
+.background-image-space {
+  background-image: url("https://mybackdrop.co.uk/wp-content/uploads/2017/06/space-galaxy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
