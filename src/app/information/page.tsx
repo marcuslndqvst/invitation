@@ -6,13 +6,13 @@ import ".././globals.css";
 
 export default function Home() {
   return (
-    <div className="bg-black flex flex-col items-center min-h-screen justify-between">
+    <div className="bg-black flex flex-col items-center min-h-screen justify-between gap-3">
       <div className="flex flex-row w-full justify-end">
         <Link href="/">
           <div className="w-full flex justify-end p-3">X</div>
         </Link>
       </div>
-      <div className="flex flex-col px-10 gap-3 items-center text-center">
+      <div className="flex flex-col px-10 gap-2 items-center text-center">
         <h1 className="font-mono">
           välkommen på <span className="text-pink-400 animate-ping">Eden</span>{" "}
           &<span className="text-purple-400 animate-pulse"> Umas</span>{" "}
