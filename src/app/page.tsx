@@ -21,9 +21,13 @@ export default function Home() {
 
 function Video() {
   return (
-    <video height={500} width={320} controls loop>
+    <video height={500} width={320} autoPlay controls preload="auto">
       <source src="/rymdkalas.mov" type="video/mp4" />
-      Your browser does not support the video tag.
+      Your browser does not support the video tag. See it{" "}
+      <a href="https://youtube.com/shorts/09MaF-XXFsk?si=6lT_99LAI96Vn7hL">
+        here
+      </a>{" "}
+      instead!
     </video>
   );
 }
